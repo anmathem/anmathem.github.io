@@ -1,0 +1,185 @@
+body {
+  background-color: white;
+  color: black;
+  font-family: "JetBrains Mono";
+}
+
+.homepage-static {
+  width:calc(2.25vw + 2.25em);
+  float:left;
+  z-index:-1;
+  padding-right: 5px;
+}
+
+.homepage-static:hover {
+  opacity: 0;
+}
+
+.homepage-gif {
+  width:calc(2.25vw + 2.25em);
+  z-index:-2;
+  position:absolute;
+  left: 8px;
+}
+
+.menu{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.mobcontainer {
+  border-left:thin solid;
+  border-top:thin solid;
+  border-right:thin solid;
+  padding-bottom:0;
+  overflow:hidden;
+}
+
+.artcontainer {
+  border:thin solid;
+  background : #99c563;
+  
+}
+.artmenucont {
+  border-bottom:thin solid;
+  border-right:thin solid;
+  border-left:thin solid;
+}
+
+.mtag {
+  float: left;
+  position: relative;
+  display: block;
+  padding-right: 8px;
+  padding-left: 4px;
+  color: #99c563;
+}
+
+.mnavitem a {
+  float: right;
+  position: relative;
+  display: block;
+  padding-right: 4px;
+  padding-left: 4px;
+  text-decoration : none;
+  color: black;
+
+}
+
+.mnavitem a:hover {
+  background :#99c563;
+}
+
+.artnavitem a {
+  float:right;
+  position: relative;
+  display: block;
+  padding-right: 4px;
+  padding-left: 4px;
+  text-decoration : none;
+  color: black;
+}
+
+.artnavitem a:hover {
+  background :#99c563;
+}
+
+section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  border-left:thin solid;
+  border-top:thin solid
+}
+
+article {
+  padding-right:10px;
+  padding-left:10px;
+  border-right:thin solid;
+  border-bottom:thin solid;
+  position:relative;
+}
+
+.title {
+  margin-bottom:0px;
+  margin-top:10px;
+}
+
+.chapo {
+  margin-top:0px;
+  margin-bottom:2em;
+  font-family:"IBM Plex Sans";
+}
+
+.read-more {
+  color: #99c563;
+  text-decoration : none;
+  position:absolute;
+  bottom:0px;
+  right:0px;
+  padding-right: 5px;
+} 
+
+.date {
+  color: #99c563;
+  position:absolute;
+  bottom:0px;
+  left:0px;
+  padding-left: 5px;
+  margin:0px;
+}
+
+@media (min-width: 500px) {
+  .corps {margin: 0 auto; width: 75%; padding-top:1.3em;}
+}
+
+.corps {
+  font-family : 'IBM Plex Sans', sans-serif;  
+}
+
+.corps hr {
+  width: 50%;
+  border-style: none;
+  height: 2px;
+  background: #99c563;
+  margin-block-start: 1.3em;
+  margin-block-end: 1.3em;
+}
+
+.corps a {
+  text-decoration: none; 
+  color: #5c9615
+}
+
+.corps h3 {
+  font-family: 'JetBrains Mono', monospace;
+  position: relative;
+  overflow: hidden;
+}
+
+.corps h3:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  background: #99c563; 
+  bottom: 0.3em;
+  height: .6em;
+}
+
+.corps h4, .corps h5, .corps h6 {
+  font-size: inherit;
+  font-family: "Jetbrains Mono";
+  margin: 0;
+}
+
+.arttitle {
+  margin: 1rem;
+}
+
+::-moz-selection {
+  background: #99c563;
+}
+
+
+::selection {
+  background: #99c563;
+}
